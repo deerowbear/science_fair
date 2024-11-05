@@ -13,7 +13,7 @@ public class ExcelServiceImpl implements ExcelService {
     private static String OUTPUT = "output";
 
     /**
-     * Export a list of number models to a csv file to be opened in excel
+     * Export a list of number models to a xlsx file
      * @param numberModels
      */
     @Override
@@ -35,7 +35,7 @@ public class ExcelServiceImpl implements ExcelService {
     }
 
     /**
-     * Create the first line of the csv file to write a header
+     * Create the first row of the xlsx file to write a header
      * @param numberModels
      * @param workbook
      */
@@ -56,7 +56,7 @@ public class ExcelServiceImpl implements ExcelService {
     }
 
     /**
-     * Create a separate line for each numberModel in the csv file
+     * Create a separate row for each numberModel in the xlsx file
      * @param numberModels
      * @param workbook
      */
